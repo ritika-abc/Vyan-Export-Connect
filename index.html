@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Vyan Export Connect</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Vyan Export Connect" name="keywords">
+    <meta content="Vyan Export Connect" name="description">
+
+    <!-- Favicon -->
+    <link href="image/logo/fav.png" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Rubik:wght@500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;"></div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Topbar Start -->
+    <div class="container-fluid  px-0" style="background-color: #da8300;">
+        <div class="row g-0 d-none d-lg-flex">
+            <div class="col-lg-6 ps-5 text-start">
+                <div class="h-100 d-inline-flex align-items-center text-white">
+                    <span>Follow Us:</span>
+                    <a class="btn btn-link text-light" href=""><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-link text-light" href=""><i class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-link text-light" href=""><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-6 text-end">
+                <div class="h-100 topbar-right d-inline-flex align-items-center text-white py-2 px-5">
+                    <span class="fs-5 fw-bold me-2"><i class="fa fa-phone-alt me-2"></i> </span>
+                    <span class="fs-5 fw-bold">+91 7742324464</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top py-0 pe-5">
+        <a href="/" class="navbar-brand ps-5 me-0">
+            <h6>Vyan Export Connect</h6>
+        </a>
+        <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a href="/" class="nav-item nav-link  ">Home</a>
+                <a href="" class="nav-item nav-link">About</a>
+         
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Our Products</a>
+                    <!-- <div class="dropdown-menu bg-light m-0">
+                        <?php
+                        include("config.php");
+                        $s = "select * from `pro`";
+                        $q = mysqli_query($con, $s);
+                        while ($row = mysqli_fetch_array($q)) {
+                        ?>
+                            <a href="https://lmokglobaltrade.com/singal-product.php?slug=<?php echo $row['slug']; ?>" target="_blank" class=" text-capitalize dropdown-item"><?php echo $row['name']; ?></a>
+                        <?php } ?>
+
+                    </div> -->
+                </div>
+         
+                <a href="" class="nav-item nav-link">Our Blogs</a>
+
+                <a href="" class="nav-item nav-link">Contact</a>
+            </div>
+            <a href="" class="btn btn-primary px-3 d-none d-lg-block" data-bs-toggle="modal"
+                data-bs-target="#exampleModal">Enquire Now</a>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="image/banner/1.jpg" height="600px" class="d-block obj w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="image/banner/2.jpg" height="600px" class="d-block obj w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="image/banner/3.jpeg" height="600px" class="d-block obj w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <section class="my-6">
+        <div class="container">
+            <div class="b-img revealing-image">
+                <div class="row justify-content-center">
+                    <div class="col-lg-7 text-center">
+                        <div class="px-2">
+                            <h5 class="display-5 fw-bold text-white  fa-bounce">Certified & Trusted Herbal Exporter in
+                                India</h5>
+                            <p class="fs-5 my-3">Vyan Export Connect is a <b>trusted exporter of premium herbal powders
+                                    from India</b>, committed to quality, reliability, and customer satisfaction. With a
+                                strong sourcing network and strict quality control processes, we ensure that every
+                                product meets international standards and buyer expectations.
+                            </p>
+                            <a href="" class="btn btn-light px-5 py-2">Our Company</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Start -->
+    <div class="b2">
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="row g-5">
+
+                    <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                        <div class=" bg-white px-4 py-3 ">
+                            <p class="fw-medium text-uppercase text-primary mb-2">About Vyan Export Connect</p>
+                            <h1 class="display-5 mb-4">Premium Herbal Powder Manufacturer & Exporter</h1>
+                            <p class="mb-4">Vyan Export Connect is a trusted Indian herbal powder exporter based in
+                                Bhiwadi, Rajasthan, India. We specialize in the export of high-quality Ashwagandha
+                                Powder, Moringa Powder, and Shatavari Powder, sourced from reliable growers and
+                                processed under strict quality standards. Our products are known for their purity,
+                                natural composition, and consistent quality, making them suitable for nutraceutical,
+                                pharmaceutical, food, and wellness industries worldwide.
+                            </p>
+
+                            <div class="row pt-2">
+                                <div class="col-sm-6">
+                                    <div class="d-flex align-items-center">
+                                        <div class="flex-shrink-0 btn-lg-square rounded-circle bg-primary ">
+                                            <i class="fa  fa-bounce fa-phone-alt text-white"></i>
+                                        </div>
+                                        <div class="ms-3">
+                                            <p class="mb-2">Call us</p>
+                                            <h6 class="mb-0">
+                                                +91 7742324464</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="d-flex align-items-center">
+                                        <div class="flex-shrink-0 btn-lg-square rounded-circle bg-primary">
+                                            <i class="fa fa-envelope-open text-white  fa-bounce"></i>
+                                        </div>
+                                        <div class="ms-3">
+                                            <p class="mb-2">Email us</p>
+                                            <h6 class="mb-0">info@vyanexport.com</h6>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <a href="about.php" class="btn btn-dark px-5 mt-5">About Us</a>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <img class="img-fluid top_trai" src="image/banner/about-us.png" height="auto" width="100%">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+
+
+    <div class="my-6 ">
+        <section>
+            <div class="container">
+                <div class="row h-100 my-3 bg-p align-items-center">
+                    <div class="col-lg-6 my-4">
+                        <div class="px-3">
+                            <h5 class="mb-4 display-6 ">Ashwagandha Powder</h5>
+                            <p>Ashwagandha Powder is a premium herbal powder made from carefully sourced
+                                high-quality Ashwagandha roots. Known as an adaptogen in Ayurvedic medicine, it
+                                helps support stress relief, immunity, energy, and overall wellness. Our powder is
+                                finely processed to retain its natural bioactive compounds, ensuring purity,
+                                potency, and consistency for international buyers.</p>
+                            <p>Premium Ashwagandha Powder from India – Sourced from high-grade roots, processed
+                                under strict quality standards, and exported worldwide. Ideal for nutraceuticals,
+                                herbal blends, and wellness products. Bulk supply, hygienic packaging, and
+                                international delivery ensure a reliable sourcing experience.</p>
+                            <a href="innovation.php" class="btn btn-primary px-5 py-3 rounded-pill">Enquire Now</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 my-4">
+                        <div class=""> <img src=" image/banner/1.jpg" height="100%" class="obj revealing-image"
+                                width="100%" alt="">
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="row h-100 my-3 bg-p align-items-center">
+                    <div class="col-lg-6 my-4">
+                        <div class=""> <img src=" image/banner/2.jpg" height="100%" class="obj revealing-image"
+                                width="100%" alt="">
+
+                        </div>
+
+                    </div>
+                    <div class="col-lg-6 my-4">
+                        <div class="px-3">
+                            <h5 class="mb-4 display-6 ">Moringa Powder</h5>
+                            <p>Moringa Powder is a premium herbal powder made from fresh, nutrient-rich Moringa
+                                leaves. Packed with vitamins, minerals, antioxidants, and natural proteins, it is
+                                widely valued for promoting overall health, energy, and immunity. Our Moringa Powder
+                                is finely processed to retain its natural nutritional properties, making it ideal
+                                for international buyers seeking high-quality herbal ingredients.</p>
+                            <p>Moringa Powder – A nutrient-packed superfood for energy, immunity, and overall
+                                wellness. 100% pure, finely processed, and export-ready from India. Perfect for
+                                health supplements, herbal blends, and functional foods.</p>
+                            <a href="innovation.php" class="btn btn-primary px-5 py-3 rounded-pill">Enquire Now</a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row h-100 my-3 bg-p align-items-center">
+                    <div class="col-lg-6 my-4">
+                        <div class="px-3">
+                            <h5 class="mb-4 display-6 ">Shatavari Powder</h5>
+                            <p>Shatavari Powder is a premium herbal powder made from high-quality Shatavari roots,
+                                carefully sourced and finely processed to retain its natural properties. Known in
+                                Ayurvedic medicine for its support of women’s health, vitality, and immunity,
+                                Shatavari Powder is widely used in herbal formulations, wellness products, and
+                                nutraceuticals.</p>
+                            <p>Premium Shatavari Powder from India – Carefully processed from selected high-grade
+                                Shatavari roots under strict quality standards. Perfect for nutraceuticals, wellness
+                                products, and Ayurvedic applications. Available in bulk with hygienic packaging and
+                                reliable international shipping for global buyers.</p>
+                            <a href="innovation.php" class="btn btn-primary px-5 py-3 rounded-pill">Enquire Now</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 my-4">
+                        <div class=""> <img src=" image/banner/3.jpeg" height="100%" class="obj revealing-image"
+                                width="100%" alt="">
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <style>
+        /* Background container */
+        .container1 {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-size: cover;
+            background-position: center;
+            transition: background-image 0.5s ease-in-out;
+            overflow: hidden;
+        }
+
+        /* Perspective wrapper */
+        .depth {
+            perspective: 1000px;
+            width: 100%;
+            height: 80%;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Cards */
+        .card {
+            position: absolute;
+            width: 50%;
+            height: 300px;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 10px 17px 29px rgba(0, 0, 0, 0.15);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 15px;
+            transition: box-shadow 0.2s ease;
+        }
+
+
+
+        .card:hover {
+            box-shadow: 16px 23px 38px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+    </head>
+
+    <body>
+
+        <div class="container1 my-6 d-none d-lg-block" id="bgContainer">
+            <div class="depth" id="depth">
+
+                <div class="card" data-bg="url('image/banner/1.jpg')">
+                    <h2>🌿 Ashwagandha Powder</h2>
+                    <p>Our Ashwagandha Powder is made from premium-quality roots and finely processed to retain its
+                        natural properties. It is widely used in Ayurvedic formulations and wellness products for its
+                        adaptogenic benefits.</p>
+                </div>
+
+                <div class="card" data-bg="url('image/banner/2.jpg')">
+                    <h2>🌿 Moringa Powder</h2>
+                    <p>Moringa Powder is produced from fresh, nutrient-rich moringa leaves. Known for its high
+                        nutritional value, it is commonly used in health supplements, functional foods, and herbal
+                        blends.</p>
+                </div>
+
+                <div class="card" data-bg="url('image/banner/3.jpeg')">
+                    <h2>🌿 Shatavari Powder</h2>
+                    <p>Our Shatavari Powder is carefully processed from high-grade shatavari roots. It is valued in
+                        traditional herbal applications and wellness formulations for its natural benefits.</p>
+                </div>
+
+            </div>
+        </div>
+
+        <script>
+            const cards = document.querySelectorAll('.card');
+            const bgContainer = document.getElementById('bgContainer');
+            const depth = document.getElementById('depth');
+
+            const rx = 900;
+            const ry = 900;
+
+            function placeCards(mouseX = 0) {
+                let topCard = null;
+                let maxZ = -Infinity;
+
+                cards.forEach((card, i) => {
+                    // Calculate circular position
+                    const theta =
+                        (((180 / cards.length) / 180) * i * Math.PI)
+                        - Math.PI
+                        + (((Math.PI / cards.length) / 2) * (-mouseX * Math.PI))
+                        + (Math.PI / cards.length) / 2;
+
+                    const posX = Math.round(rx * Math.cos(theta));
+                    const posY = Math.round(ry * Math.sin(theta)) + ry;
+                    const posZ = 30 - Math.abs(posX);
+
+                    // Move card without rotation
+                    card.style.transform = `translate3d(${posX}px, ${posY}px, ${posZ}px)`;
+
+                    // Detect the card closest to the front
+                    if (posZ > maxZ) {
+                        maxZ = posZ;
+                        topCard = card;
+                    }
+                });
+
+                // Change background to the top card's image
+                if (topCard && topCard.dataset.bg) {
+                    bgContainer.style.backgroundImage = topCard.dataset.bg;
+                }
+            }
+
+            // Initial placement
+            placeCards();
+
+            // Mouse movement interaction
+            depth.addEventListener('mousemove', e => {
+                const rect = depth.getBoundingClientRect();
+                const x = (e.clientX - rect.left) / rect.width;
+                const xNorm = (x * 2) - 1;
+                placeCards(xNorm);
+            });
+        </script>
+        <!-- Features Start -->
+        <div class=" my-6 ">
+            <div class=" container-fluid">
+                <div class="row  ">
+                    <div class="col-lg-12    wow fadeInUp" data-wow-delay="0.1s">
+                        <div class=" ">
+                            <div class="banner-video   position-relative  ">
+                                <video height="100%" class="obj" width="100%" src="1.mp4" type="video/mp4" autoplay
+                                    muted loop></video>
+                                <div class="position-absolute  d-none d-md-block w-50 h-75 start-0  top-0"
+                                    style="z-index: 100;position: absolute;">
+                                    <div class="d-flex px-4 mt-5 h-100 align-items-center ">
+                                        <div class=" bg-white shadow-lg py-5 px-4 abc wow fadeInUp"
+                                            data-wow-delay="0.5s">
+                                            <p class="fw-medium text-uppercase text-primary mb-2">Why Choosing Us!</p>
+                                            <h1 class="display-5 mb-4">Few Reasons Why People Choosing Us!</h1>
+                                            <p class="mb-4">At Vyan Export Connect, we are committed to providing
+                                                high-quality
+                                                agro products
+                                                with
+                                                reliability and professionalism. Here’s why buyers trust us worldwide:
+                                            </p>
+                                            <div class="row gy-4 ">
+
+                                                <div class="col-12">
+                                                    <div class="d-flex">
+
+                                                        <div class="ms-4">
+                                                            <h4>Trusted Herbal Exporter</h4>
+                                                            <span>We follow transparent business practices and maintain long-term relationships with our international clients.</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="d-flex">
+
+                                                        <div class="ms-4">
+                                                            <h4>Premium Quality Products</h4>
+                                                            <span>Our herbal powders are carefully sourced and processed
+                                                                to
+                                                                retain natural purity and effectiveness.</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="d-flex">
+
+                                                        <div class="ms-4">
+                                                            <h4>Export-Ready Packaging</h4>
+                                                            <span>Safe, secure, and customized packaging options
+                                                                suitable for
+                                                                international shipping.</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- Features End -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- Footer Start -->
+        <div class="container-fluid   footer py-5 wow fadeIn" style="background-color: #373a36;" data-wow-delay="0.1s">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-lg-6 col-md-6">
+                        <h5 class="text-white mb-4">Our Office</h5>
+                        <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>
+                            Shop No. 02, Unnas Colony,
+                            Near Saint Gobain India Pvt. Ltd.,
+                            Godhan, Bhiwadi,
+                            Khairthal–Tijara, Rajasthan – 301019
+                            India</p>
+                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+91 7742324464
+                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+91 9549684464
+                        </p>
+                        <p class="mb-2"><i class="fa fa-envelope me-3"></i>
+                            nfo@vyanexport.com</p>
+                        <div class="d-flex pt-3">
+
+                            <a class="btn btn-square btn-primary rounded-circle me-2" href=""><i
+                                    class="fab fa-facebook-f"></i></a>
+                             
+                            <a class="btn btn-square btn-primary rounded-circle me-2" href=""><i
+                                    class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h5 class="text-white mb-4">Quick Links</h5>
+                        <a class="btn btn-link" href="/">Home</a>
+                        <a class="btn btn-link" href="">About Us</a>
+                        <a class="btn btn-link" href="#">Our Products</a>
+                        <a class="btn btn-link" href="">Our Certificate</a>
+                        <a class="btn btn-link" href="">Contact Us</a>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6">
+                        <h5 class="text-white mb-4">About Us</h5>
+                        <p>
+Vyan Export Connect is a trusted exporter of premium herbal powders from India, committed to quality, reliability, and customer satisfaction. With a strong sourcing network and strict quality control processes, we ensure that every product meets international standards and buyer expectations. </p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+        <a class="fixed-bottom w-25 pb-3 px-3  fa-bounce" href="https://wa.me/917742324464?text=">
+            <img src="wp.png" width="80px" height="80px" alt="">
+            <!-- <i class="fa-solid fa-phone fa-shake"></i> <i class="fa-solid fa-phone"></i>-->
+        </a>
+        <a href="" class=" d-block   py-3 px-3" style="width: 100px;position:fixed;top:100%;z-index:20">
+        </a>
+
+        <!-- Copyright Start -->
+        <div class="container-fluid copyright py-4" style="background-color: #000000;">
+            <div class="container text-center">
+                <p class="mb-2"> <a class="fw-semi-bold" href="/">Vyan Export Connect</a>, All Right Reserved.
+                </p>
+
+                <p class="mb-0">Designed By <a class="fw-semi-bold" href="https://web2export.com"
+                        target="_blank">web2export.com</a></p>
+            </div>
+        </div>
+        <!-- Copyright End -->
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i
+                class="bi bi-arrow-up"></i></a>
+
+
+
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title fs-5" id="exampleModalLabel"> Vyan Export Connect
+                        </h4>
+
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-12 col-md-6 my-2">
+                                <input type="text" class="form-control name1" require value=""
+                                    placeholder="Enter Your Name" />
+                            </div>
+                            <div class="col-12 col-md-6 my-2">
+                                <input type="number" class="form-control number1" require value=""
+                                    placeholder="Enter Your Number" />
+                            </div>
+                            <div class="col-12  my-2">
+                                <input type="email" class="form-control email1" require value=""
+                                    placeholder="Enter Your Email" />
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" onclick="go()" class="btn btn-primary">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            function contact() {
+                var na = document.querySelector(".name").value;
+                var em = document.querySelector(".email").value;
+                var phone = document.querySelector(".phone").value;
+                var mes = document.querySelector(".message").value;
+                var url1 = "https://wa.me/917742324464?text=" +
+                    "Name: " +
+                    na + " " +
+                    "Email: " +
+                    em + " " +
+                    "Phone : " + phone + " " +
+                    "Message : " + mes;
+                window.open(url1, "_blank").focus();
+            }
+        </script>
+
+        <script>
+            function go() {
+                var name = document.querySelector(".name1").value;
+                var email = document.querySelector(".email1").value;
+                var number = document.querySelector(".number1").value;
+                var url = "https://wa.me/917742324464?text=" +
+                    "Name: " +
+                    name + " " +
+                    " Number : " +
+                    number + " " +
+                    " Email : " + email;
+                window.open(url, "_blank").focus();
+            }
+        </script>
+
+
+
+        <!-- JavaScript Libraries -->
+        <script src="assets-sticky//js/scripts.js"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/wow/wow.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        <script src="lib/counterup/counterup.min.js"></script>
+
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+    </body>
+
+</html>
